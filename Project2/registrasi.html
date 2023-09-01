@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap" rel="stylesheet">
+  
+    <style>
+      body{
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+        font-family: Poppins;
+      }
+      .btn-primary{
+        background-color: #6B62FF;
+        border: none;
+      }
+      .btn-primary:hover{
+        background-color: #4e46eb;
+        border: none;
+      }
+      
+      @media (max-width: 932px) {
+        .hidden{
+          display: none !important;
+        }
+        
+        .reg{
+          padding-bottom: 50px;
+          text-align: center;
+          
+        }
+      }
+      @media (min-width: 932px) {
+        .bg{
+        padding: 50px 40px 50px 40px;
+        background: #CCCCCC;
+        border-radius: 10px;
+        }
+
+        .col{
+          margin: 50px;
+        }
+        
+
+        /* .ui{
+          background-color: rgb(111, 113, 113);
+          padding: 100px;
+        } */
+        
+      }
+      /* .pd{
+        padding: 40px 30px 40px 30px;
+        background: #CCCCCC;
+        border-radius: 10px;
+        box-shadow: 0, 0, 0, 0.5 #4e46eb;
+      } */
+    </style>
+
+  </head>
+  <body class="p-5">
+
+    <div class="row m-0 h-100 ">
+      <section class="shadaw d-flex justify-content-center">
+        <div class="col d-flex justify-content-center align-items-center">
+          <form class="w-75 bg">
+            <h3 class="text-center reg">Registrasi Yuk!</h3>
+            
+            <div class="mb-3">
+              <label for="exampleInputNamaLengkap" class="form-label">Nama Lengkap</label>
+              <input type="text" class="form-control" id="exampleInputNamaLengkap">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn btn-primary w-100 mt-3">Registrasi</button>
+            
+          </form>
+        </div>
+        <div class="col d-flex justify-content-center align-items-center hidden">
+          <img src="img/login-1.svg" class="w-75 h-75" alt="img-login ">
+        </div>
+      </section>
+    </div>
+    <script src="js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
